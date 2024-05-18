@@ -35,20 +35,18 @@ To prepare for the CFG degree I have undertaken multiple [MOOCs](https://codefir
 
 ## Knowledge and demonstrated use of Git/GitHub
 ### Checking the status
-![Checking the status](https://github.com/FaithThough/CFG-Degree/assets/116672234/e282ae69-850d-4ddd-93ee-52635b1110eb)
+![Checking the status](https://github.com/FaithThough/CFG_Degree/assets/116672234/58c95e01-e352-479f-9132-232081a2c0ca)
 ### Creating a branch
-![Creating a branch](https://github.com/FaithThough/CFG-Degree/assets/116672234/06c1c89c-4dc7-4028-9b42-21fd1f3ee409)
+![Creating a branch](https://github.com/FaithThough/CFG_Degree/assets/116672234/857195e9-2c13-4e4a-a540-2e6ab87123bc)
 ### Adding files to a branch
-![Adding files to a branch 2](https://github.com/FaithThough/CFG-Degree/assets/116672234/3fd65a82-2d10-44e1-b083-028841fe353f)
-![Adding files to a branch 3](https://github.com/FaithThough/CFG-Degree/assets/116672234/aceca200-973f-4664-902a-4efed73a1943)
+![Adding files to a branch](https://github.com/FaithThough/CFG_Degree/assets/116672234/311b4832-1a50-4526-a675-a09f230206a4)
 ### Adding commits with meaningful messages
-![Adding commits with meaningful messages](https://github.com/FaithThough/CFG-Degree/assets/116672234/d12e1c10-5f0c-43ee-820a-d117c182e842)
+![Adding commits with meaningful messages](https://github.com/FaithThough/CFG_Degree/assets/116672234/bb0b723f-cc9c-472b-97a4-0f7f6dc6bde3)
 ### Opening a pull request
-![Opening a pull request 1](https://github.com/FaithThough/CFG-Degree/assets/116672234/27130ba4-7fa5-42d8-841e-6935d2f46ec8)
-![Opening a pull request 2](https://github.com/FaithThough/CFG-Degree/assets/116672234/eafd2d26-590d-4b57-bcd5-f6a4f4416675)
+![Opening a pull request](https://github.com/FaithThough/CFG_Degree/assets/116672234/b2e97e8b-d7ad-40cc-9874-aec1660a1b72)
 ### Merging and deploying to main branch
-![Merging and deploying to main branch 1](https://github.com/FaithThough/CFG-Degree/assets/116672234/d8bde497-8891-4b74-94ee-44d030a90e1c)
-![Merging and deploying to main branch 2](https://github.com/FaithThough/CFG-Degree/assets/116672234/4835a2b0-0f0b-4069-aabe-7057f31a84d6)
+![Merging and deploying to main branch](https://github.com/FaithThough/CFG_Degree/assets/116672234/8497aea4-2119-439c-a828-5944543c8a30)
+![Merging and deploying to main branch 2](https://github.com/FaithThough/CFG_Degree/assets/116672234/d4fbe161-a16a-44f9-8b1a-12105ae8ad33)
 ### [.gitignore](.gitignore.txt)
 Git ignore allows you to specify which files or parts of your project should be ignored by git. Examples of these files may include:
 - Temporary files
