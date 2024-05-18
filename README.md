@@ -1,4 +1,4 @@
-# CFG_Degree
+# CFG-Degree
 ![CFG degree logo.](https://codefirstgirls.com/wp-content/uploads/2022/04/CFGDegree-Logo-2-768x384.png)
 
 This repository will contain my work for the [CFGdegree](https://codefirstgirls.com/courses/cfgdegree/).
