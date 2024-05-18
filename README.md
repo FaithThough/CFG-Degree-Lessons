@@ -54,5 +54,5 @@ Git ignore allows you to specify which files or parts of your project should be 
 - Personal files
 - Hidden files
 
-### [requirements.txt](requirements.txt)
+### [requirements.txt](requirements.txt) 
 A requirements.txt file contains a list of packages or libraries needed to work on a project that call all be installed with the file. 
