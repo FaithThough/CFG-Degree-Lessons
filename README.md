@@ -47,7 +47,7 @@ To prepare for the CFG degree I have undertaken multiple [MOOCs](https://codefir
 ### Merging and deploying to main branch
 ![Merging and deploying to main branch](https://github.com/FaithThough/CFG_Degree/assets/116672234/8497aea4-2119-439c-a828-5944543c8a30)
 ![Merging and deploying to main branch 2](https://github.com/FaithThough/CFG_Degree/assets/116672234/d4fbe161-a16a-44f9-8b1a-12105ae8ad33)
-### [.gitignore](.gitignore.txt)
+### [.gitignore](.gitignore)
 Git ignore allows you to specify which files or parts of your project should be ignored by git. Examples of these files may include:
 - Temporary files
 - Log files
