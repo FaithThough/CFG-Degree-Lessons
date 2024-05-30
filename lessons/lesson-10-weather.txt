@@ -1,0 +1,4 @@
+The temperature in London is 13.3, but feels like 12.8
+The current wind speed in London is 5.66
+The current humidity in London is 81
+The current weather in London is clouds
