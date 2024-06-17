@@ -113,7 +113,7 @@ BEGIN
     VALUES(o_status,t_amount,o_quantity,c_id);
 END //
 
-DELIMETER;
+DELIMITER ;
 
 -- Call insert SP
 CALL sp_insert_orders('Dispatched', 50, 3, 1);
