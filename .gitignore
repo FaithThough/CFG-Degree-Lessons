@@ -1,3 +1,4 @@
 .idea
 venv
-config.py
+lessons/*/config.py
+lessons/*/__pycache__
