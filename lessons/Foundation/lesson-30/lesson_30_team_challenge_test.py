@@ -17,7 +17,7 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_case_3(self):
-        purple_hats_heights = [5, 5, 5, 5, 5]
+        purple_hats_heights = [5, 5, 5gi, 5, 5]
         black_hats_heights = [5, 5, 5, 5, 5]
         expected = False
         actual = can_take_picture(purple_hats_heights, black_hats_heights)

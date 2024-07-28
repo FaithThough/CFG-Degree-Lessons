@@ -10,7 +10,7 @@ def minimum_waiting_time(patient_attend_times):
 
     return total
 
-result = minimum_waiting_time(patient_attend_times)
+result = minimum_waiting_time(patient_attend_times
 print(result)
 
 
