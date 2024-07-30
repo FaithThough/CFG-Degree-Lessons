@@ -10,6 +10,7 @@ class Dog:
         self.breed = breed
 
 
+# Super class
 class Bird:
     def fly(self):
         pass
