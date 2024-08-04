@@ -47,19 +47,105 @@ def decorator_function(function):
         function()
         print("Thanks for visiting")
 
-    return modified_function()
+    return modified_function
 
 
 def hello_world():
     print("Hello world👋🌍")
 
 
-decorate = decorator_function(hello_world)
-print(decorate)
+# # Approach 1: Manually decorating the function
+# decorated_hello_world = decorator_function(hello_world)
+# decorated_hello_world()
+
+# Approach 2: using @ symbol
+@decorator_function
+def hello_world_decorated():
+    print("Hello world👋🌍")
+
+
+# Calling approach 2
+hello_world_decorated()
+
+def decorator_function(function):
+    def modified_function(*args, **kwargs):
+        print("Welcome to our application")
+        function(*args, **kwargs)
+        print("Thanks for visiting")
+
+    return modified_function
+
+
+@decorator_function
+def hello_world_decorated(name):
+    print(f"Hello {name}👋🌍")
+
+
+# Calling the hello_world_decorated with an argument
+hello_world_decorated("Faith")
+
+
 
 # 4. Decorating Functions with Parameters
+def validate_division(function):
+    def modified_function(a, b):
+        print(f"Let's divide {a} by {b}")
+        if b == 0:
+            print("You can't divide by zero ❌")
+            return  # Return nothing (implicitly returns None) if b is 0 to prevent division by zero
+        return function(a, b)  # Call the original function with the arguments a and b, and return its result
+
+    return modified_function  # Return the modified_function so it replaces the original function when the decorator is applied
+
+
+@validate_division
+def divide(a, b):
+    print(a / b)
+
+
+divide(10, 5)
+divide(3, 0)
+
 
 # 5. Make general decorators that work with any number of parameters.
 # ## Chain decorators together ###
+def equal_sign(function):
+    def modified_function(*args, **kwargs):
+        print("=" * 40)
+        function(*args, **kwargs)
+        print("=" * 40)
+    return modified_function
+
+
+def pipe_sign(function):
+    def modified_function(*args, **kwargs):
+        print("|" * 40)
+        function(*args, **kwargs)
+        print("|" * 40)
+    return modified_function
+
+@equal_sign
+@pipe_sign
+def display_message(message):
+    print(message)
+
+
+display_message("Hello👋")
+
 
 # 6. Class Decorator example with *args and **kwargs
+class my_class_decorator:
+    def __init__(self, function):
+        self.function = function # Store the original function
+
+    def __call__(self, *args, **kwargs):
+        print("Do something before the function calls") # Pre-processing
+        self.function(*args, **kwargs) # Call the original function with all arguments
+        print("Do something after the function calls") # Post-processing
+
+@my_class_decorator
+def my_function(name, message):
+    print(f"{name}, {message}")
+
+my_function("Faith", "hello")
+
