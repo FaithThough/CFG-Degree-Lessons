@@ -32,22 +32,22 @@ print(list(chained))
 # isslice is an iterable to create a new iterable from a specific start, stop and step
 # itertools.islice(iterable, start (inclusive), stop (exclusive)
 
-numbers = itertools.count() # creates an infinite count starting from 0
-sliced = itertools.islice(numbers, 10, 20) # takes a slice from the 10th to the 20th element
-print(list(sliced)) # converts the slice to a list to see the elements
+numbers = itertools.count()  # creates an infinite count starting from 0
+sliced = itertools.islice(numbers, 10, 20)  # takes a slice from the 10th to the 20th element
+print(list(sliced))  # converts the slice to a list to see the elements
 
 # Combinations
 # Generates all possible combinations of a specified length from an iterable
 
 letters = "ABC"
-combination = itertools.combinations(letters, 2) # 2 is the length of the combination
+combination = itertools.combinations(letters, 2)  # 2 is the length of the combination
 print(list(combination))
 
 # Permutations
 # Generate all possible permutations of a specified length from an iterable
-a = [1,2]
-b  = ["a", "b"]
-product = itertools.product(a,b)
+a = [1, 2]
+b = ["a", "b"]
+product = itertools.product(a, b)
 print(list(product))
 
 # repeat
@@ -64,3 +64,18 @@ print(list(compressed))
 
 # dropwhile
 # Drops elements from an iterable as long as a condition is true and then returns the rest
+
+numbers = [1, 5, 7, 4, 1]
+dropped = itertools.dropwhile(lambda x: x < 5, numbers)
+print(list(dropped))
+
+# The above in a function
+def dropwhile_function(x):
+    return x < 5
+
+# zip
+numbers = [1, 2, 3]
+letters = ["a", "b", "c"]
+zipped = zip(numbers,letters)
+print(list(zipped))
+
