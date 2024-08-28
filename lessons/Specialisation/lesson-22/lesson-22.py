@@ -1,3 +1,4 @@
+import datetime
 class Vehicle:
     def __init__(self, name, max_speed, fuel_type):
         self.name = name
@@ -43,8 +44,18 @@ class PassengerPlane(Vehicle):
 
     def boarding_time(self):
         boarding_time = self.number_of_passengers * 2
-        return(f"The boarding time for {self.number_of_passengers} passengers is {boarding_time} minutes")
+        formatted_boarding_time = print("%02d:%02d" % (divmod(boarding_time, 60)))
+        return(f"The boarding time for {self.number_of_passengers} passengers is {formatted_boarding_time}")
 
 Boeing = PassengerPlane("Boeing 747", 920, "jet fuel", 416)
 print(Boeing.boarding_time())
 
+# Write a Python program to calculate the value of 'a' to the power of 'b' using recursion.
+
+def power(a,b):
+    if b == 0:
+        return 1 # base case
+    else:
+        return a * power(a, b-1) # recursive case
+
+print(power(3,4)) # Output is 81
