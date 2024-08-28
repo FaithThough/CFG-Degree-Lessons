@@ -122,6 +122,22 @@ Validate subsequence. Use suggested tests below to check
 correctness of your solution. 
 """
 
+def is_valid_subsequence(array, sequence):
+    index = 0
+    n = len(sequence)
+
+    # Iterate through the main array
+    for element in array:
+        # Check if current element in array matches the current target in numbers
+        if index < n and element == sequence[index]:
+            index += 1  # Move to the next element in numbers
+
+        # Check if we have matched all elements of numbers
+        if index == n:
+            return True
+
+    # If loop completes and not all elements were matched
+    return False
 
 
 #### TESTS ####
@@ -155,7 +171,26 @@ Write a review on how 'class Employee' can be improved.
 """
 
 
+'''
+- According to the single responsibility principles, a class should only have one job or responsibility, in this case it has 5 responsibilities, initialisation, updating department, updating status, saving employees, removing employees, and printing employee reports
+    - Consider writing a new class for each.
+    - *The reason for this being:*
+        - *Adhering to the single responsibility principle promotes modularity.*
+        - *Each class becomes a distinct module with a well-defined responsibility, making the system easier to understand, maintain, and extend.*
+- *The code could be refactored as follows:*
+    - *An employee class that contains information related to an employee only and methods that allow to modify employee
+    information*
+    - *A function or a class that can becalled something like ‘DB handler’, which would manage all DB actions: saving, fetching , deleting data etc*
+    - *A function or a class that would be responsible for writing or reading reports. (slight refactoring variations allowed)*
+- The is_active attribute doesn’t match the self.active status = is_active
+    - Consider changing it to self.active_status = True/False
+- The def remove_employee function only deletes their name and id
+    - Consider deleting all attributes i.e. is_active and department
+- Following the interface segregation method we should ensure that all methods are utilised. Again this should be divided into smaller interfaces rather than one large one.
+- *Functions / methods that are concerned with using DB engines or even writing a report to a file do not have any error handling. → It is a good practice to use blocks like try/except to handle and raise errors with relevant informative messages, especially when trying to connect to a DB or write some data to a file.*
+- *This class is lacking any comments or docstrings*
 
+'''
 
 
 
